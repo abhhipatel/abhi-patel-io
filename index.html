@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ML for Stroke Prediction</title>
+    <link rel="icon" href="../assets/png/logo2.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav id="navbar">
+        
+        <ul>
+          <div id="logo" style="margin: 5px;">
+            <img  src="./assets/png/logo.png" alt="MyOnlineMeal.com">  
+          </div>
+            <li style="margin-top: 25px;" class="item"><a href="#home">Home</a></li>
+            <li style="margin-top: 25px;" class="item"><a href="#services-container">Services</a></li>
+            <li style="margin-top: 25px;" class="item"><a href="#contact">Contact</a></li>
+            <li style="margin-top: 25px;" class="item"><a href="https://brainstroke.herokuapp.com/">Prediction</a></li>
+        </ul>
+    </nav>
+  
+    <section id="home">
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Research</h1>
+        <div id="services">
+            <div class="box">
+                <img src="./assets/png/1.png" alt="">
+                <h2 class="h-secondary center">Prediction</h2>
+                <p class="center">Get To Know Your Chances Of Getting A Brain Stroke Disease In One Click </p>
+                <br><center><button onclick="window.location.href='https://brainstroke.herokuapp.com/';" class="Click">Click</button></center>
+              </div>
+
+
+            <div class="box">
+                <img src="./assets/png/2.png" alt="">
+                <h2 class="h-secondary center">Disease</h2>
+                <p class="center">To know More About The Disease And For Deep Information By Specialist Doctors </p>
+                <br><center><button class="Click" onclick="window.location.href='https://www.mayoclinic.org/diseases-conditions/stroke/symptoms-causes/syc-20350113';">Click</button></center>
+              </div>
+            
+            
+            <div class="box">
+                <img src="./assets/png/3.png" alt="">
+                <h2 class="h-secondary center">Treatment</h2>
+                <p class="center">Get Top List of Doctors of Brain Stroke Around you </p>
+                <br>
+                <center><button  class="Click" onclick="window.location.href='https://www.365doctor.in/delhi/brain-stroke-treatment-in-aiims';">Click</button></center>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="https://formsubmit.co/abhipatel33360@gmail.com" method="post">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required="">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required="">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="phonenumber" id="phone" placeholder="Enter your phone" required="">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+                          <iframe src="https://free.timeanddate.com/clock/i8h0vkz9/n925/tt0/tw0/tm1/ts1/tb4" frameborder="0" width="87" height="34"></iframe>
+
+        </div>
+    </section>
+    <footer class="main-footer">
+
+          <div class="main-footer__lower">
+            &copy; Copyright 2022. Made with 💚 by <strong>Abhi Patel</strong>
+          </div>
+        </div>
+      </footer>
+    
+    
+    
+    
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDundTi-pddwoqniccNrlRdjrNDHj7lPmY",
+    authDomain: "stroke-prediction-ml.firebaseapp.com",
+    projectId: "stroke-prediction-ml",
+    storageBucket: "stroke-prediction-ml.appspot.com",
+    messagingSenderId: "782145437595",
+    appId: "1:782145437595:web:15e1d01f6975d7ccdc2b3e",
+    measurementId: "G-9737F8SC9W"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+
+</html>
